@@ -34,7 +34,7 @@ body:
   - type: textarea
     attributes:
       label: Game version
-      description: Please open the console and look for the line which looks something like: RVI: x.x.x CVI x.x.x UA x and **PASTE** it here.
+      description: Please open the console and look for the line which looks something like: RVI: x.x.x CVI x.x.x UA x and PASTE it here.
     validations:
       required: true
   - type: textarea
