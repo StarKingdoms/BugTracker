@@ -1,0 +1,60 @@
+name: Report a Bug
+description: Report a bug or inconsistency with the game here.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Before reporting a bug here, please make sure you have cleared your cache and are running the latest version of the game.
+        You can tell this by opening the console and looking for the CacheChecker line. If it says anything about "invalid signatures" then your browser is loading
+        an older version of the game for some reason.
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: What you expected the game to do.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Observed/Actual behavior
+      description: What the game actually did.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: This may include a checklist, video, or other detailed instructions to help us reconstruct the issue.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: System information
+      description: Please provide OS and version, Browser and version, and any other version numbers you can give us.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Game version
+      description: Please open the console and look for the line which looks something like: `RVI: x.x.x CVI x.x.x UA x` and **PASTE** it here.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Game debug info
+      description: Please open the console and look for the line which *begins* with the text `GCDI`. Paste the entire, unmodified line here.
+    validations:
+      required: true
+  - type: checkboxes
+    attributes:
+      label: Agreements
+      description: Please agree to the following.
+      options:
+        - label: I have searched for and ensured there isn\'t already an open issue regarding this.
+          required: true
+        - label: My browser and operating system is supported by StarKingdoms.
+          required: true
+  - type: textarea
+    attributes:
+      label: Other information
+      description: Please include other helpful information here. The more info we have, the faster we can be at finding the solution to the issue.
+    validations:
+      required: false
