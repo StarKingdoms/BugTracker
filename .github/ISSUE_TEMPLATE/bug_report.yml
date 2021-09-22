@@ -34,13 +34,13 @@ body:
   - type: textarea
     attributes:
       label: Game version
-      description: Please open the console and look for the line which looks something like: `RVI: x.x.x CVI x.x.x UA x` and **PASTE** it here.
+      description: Please open the console and look for the line which looks something like: RVI: x.x.x CVI x.x.x UA x and **PASTE** it here.
     validations:
       required: true
   - type: textarea
     attributes:
       label: Game debug info
-      description: Please open the console and look for the line which *begins* with the text `GCDI`. Paste the entire, unmodified line here.
+      description: Please open the console and look for the line which *begins* with the text GCDI. Paste the entire, unmodified line here.
     validations:
       required: true
   - type: checkboxes
